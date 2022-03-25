@@ -1,4 +1,3 @@
-import { Component } from "react";
 import MyComponent from "./MyComponent";
 
 const App = () => {
