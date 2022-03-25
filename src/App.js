@@ -1,9 +1,10 @@
-import Mypra from './Mypra';
-// import Mypra from 'Mypra';
+import { Component } from "react";
+import MyComponent from "./MyComponent";
 
-
-const App = () => {
-    return <MyPra />;
+class App extends Component {
+    render() {
+        const name ='react';
+        return <MyComponent></MyComponent>
+    }
 }
-
 export default App;
