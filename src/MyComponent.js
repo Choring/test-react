@@ -4,7 +4,7 @@ const MyComponent = props => {
         <div>
             안녕하세요, 제 이름은{props.name}입니다.<br/>
             children 값은 {props.children}
-            입니다.
+            입니다. hahaha
         </div>
     );
 };
