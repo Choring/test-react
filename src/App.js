@@ -1,6 +1,12 @@
-import MyComponent from "./MyComponent";
+import React from "react";
+import Counte from "./Count";
 
-const App = () => {
-    return <MyComponent>리액트</MyComponent>
-};
+function App() {
+    return (
+        <div className="App">
+            <Counte />
+        </div>
+
+    )
+}
 export default App;
