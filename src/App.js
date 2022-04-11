@@ -1,25 +1,38 @@
 import React, {Component} from "react";
-import Child from "./Child";
 
-class App extends Component {
+// export default class App extends Component {
+//     state = {
+//         cnt: 0
+//     }
+//     countNumber = () => {
+//         this.setState( {cnt: this.state.cnt +1} )
+//     }
+
+//     render() {
+//         const {cnt} = this.state
+//         return(
+//             <div className="App">
+//                 <h1>카운트: {cnt}</h1>
+//                 <button type="button" onClick={this.countNumber}>Chage name</button>
+//             </div>
+//         )
+//     }
+// }
+
+export default class App extends Component {
     state = {
-        name: 'parent',
-        childName: "child"
+        title: "변경전 제목"
     }
-    changeName = () => {
-        this.setState({name: "parent changed", childName: "child changed too"})
+    changeTitle = () => {
+        this.state.title = '제목 업데이트'
     }
-    render(){
-        console.log('parent')
-        const {name, childName} = this.state
-        return (
+    render () {
+        const {title} = this.state
+        return(
             <div className="App">
-            <h1>{name}</h1>
-            <button type="button" onClick={this.changeName}>change name</button>
-            <Child name={childName}></Child>
+                <h1>제목: {title}</h1>
+                <button type="button" onClick={this.changeTitle}>change Title</button>
             </div>
         )
     }
 }
-
-export default App;
